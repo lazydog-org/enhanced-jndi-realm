@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns="http://lazydog.org/xml/ns/role-to-groups"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://lazydog.org/xml/ns/role-to-groups"
+    elementFormDefault="qualified">
+
+    <xs:element name="role-to-groups-mapping">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="role-name" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>
+
+                            The role name for the mapping.
+
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="group-dn" maxOccurs="unbounded" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>
+
+                            A group distinguished name for the mapping.
+
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="role-to-groups-mappings">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="role-to-groups-mapping" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>
+
+                            A role to groups mapping.
+
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<role-to-groups-mappings
+    xmlns="http://lazydog.org/xml/ns/role-to-groups"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://lazydog.org/xml/ns/role-to-groups
+                        http://lazydog.org/xml/ns/role-to-groups/role-to-groups.xsd">
+
+</role-to-groups-mappings>
