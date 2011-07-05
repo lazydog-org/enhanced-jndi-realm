@@ -73,7 +73,7 @@
         <repository>
             <id>releases</id>
             <name>Internal Releases</name>
-            <url>http://svn.home:8081/nexus/content/repositories/releases</url>
+            <url>http://mvn.home/nexus/content/repositories/releases</url>
         </repository>
     </distributionManagement>
 </project>
